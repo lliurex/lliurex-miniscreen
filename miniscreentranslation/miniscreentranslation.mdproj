@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ItemType>TranslationProject</ItemType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D14EBE82-2F55-4207-8233-F658FD68A582}</ProjectGuid>
+    <outputType>RelativeToOutput</outputType>
+    <relPath>locale</relPath>
+    <translations>
+      <translations>
+        <Translation isoCode="es_" />
+        <Translation isoCode="ca" />
+        <Translation isoCode="qcv" />
+      </translations>
+    </translations>
+    <packageName>i8n1</packageName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+</Project>

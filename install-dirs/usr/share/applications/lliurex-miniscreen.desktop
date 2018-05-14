@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=LliureX MiniScreen
+Name[es]=LliureX MiniScreen
+Name[ca]=LliureX MiniScreen
+Name[ca_ES@valencia]=LliureX MiniScreen
+Name[ca_ES.UTF-8@valencia]=LliureX MiniScreen
+Type=Application
+Exec=lliurex-miniscreen
+Icon=lliurex-miniscreen
+Terminal=0
+Categories=Application;Accessibility;
+Comment=MiniScreen to enable access to PDI for children and people with motor disabilities
+Comment[ca]=MiniPantalla per habilitar l'accés a la PDI a xiquets i personas amb mobilitat reduida
+Comment[ca_ES@valencia]=MiniPantalla per habilitar l'accés a la PDI a xiquets i personas amb mobilitat reduida
+Comment[ca_ES.UTF-8@valencia]=MiniPantalla per habilitar l'accés a la PDI a xiquets i personas amb mobilitat reduida
+Comment[es]=MiniPantalla para habilitar el acceso a la PDI a niños y personas con mobilidad reducida
+TryExec=/usr/bin/lliurex-miniscreen

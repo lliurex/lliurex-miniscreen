@@ -1,0 +1,12 @@
+[mono-install]
+
+package_name = lliurex-miniscreen
+project_dir = /srv/svn/llx-apps/lliurex-miniscreen/miniscreen
+translation_project_dir = /srv/svn/llx-apps/lliurex-miniscreen/miniscreentranslation
+root_dir= /srv/svn/llx-apps/lliurex-miniscreen
+
+
+[executable-options]
+
+executable_name = miniscreen.exe
+
