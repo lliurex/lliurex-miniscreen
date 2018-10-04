@@ -2,9 +2,10 @@ Source: lliurex-miniscreen
 Section: utils
 Priority: optional
 Maintainer: Equipo LliureX <lliurex@gva.es>
-Uploaders: Luis Antonio Garcia Gisbert <garcia_luigis@gva.es>, Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>, Javier Garcia Escribano <garcia_javesc@gva.es>, Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>, Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>, Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>, David Montalva Furio <dmontalf@gmail.com>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Jose Alfredo Murcia Andres <murcia_josand@gva.es>, Jose Carlos Garcia <garcia_josmon@gva.es>, David Perez Lledo <dperezlledo@gmail.com>, Angel Berlanas Vicente <angel.berlanas@gmail.com>
-Build-Depends: llxsrchelper,debhelper (>= 7.0), mono-mcs, libgtk2.0-cil-dev, libgconf2.0-cil-dev, libmono-sharpzip4.84-cil, libnotify-cil-dev, libmono-lliurex-utils, pkg-config, libmono-system-data4.0-cil, llxcfg-dev
-Standards-Version: 3.9.3
+Uploaders: M.Angel Juan <m.angel.juan@gmail.com>, Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Daniel Duran Vecino <daduve@gmail.com>, Juanma Navarro <juanma1980@gmail.com>, Juan Ramon Pelegrina <juapesai@hotmail.com>,Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>, David Montalva Furio <dmontalf@gmail.com>
+Build-Depends: llxsrchelper,debhelper (>= 7.0), mono-mcs, libgtk2.0-cil-dev, libgconf2.0-cil-dev, libmono-sharpzip4.84-cil, libnotify-cil-dev, libmono-lliurex-utils, pkg-config, libmono-system-data4.0-cil
+Standards-Version: 4.1.4
+Homepage: http://lliurex.net
 
 Package: lliurex-miniscreen
 Architecture: all
