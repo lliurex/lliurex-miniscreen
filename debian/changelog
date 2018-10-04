@@ -1,0 +1,103 @@
+lliurex-miniscreen (1.8.11) xenial; urgency=medium
+
+  * Removed deprecated locales
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 22 Jun 2017 10:13:01 +0200
+
+lliurex-miniscreen (1.8.10) xenial; urgency=medium
+
+  * Added metainfo
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 10 May 2017 12:44:56 +0200
+
+lliurex-miniscreen (1.8.9) xenial; urgency=medium
+
+  * Fix desktop to lliurex-store
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 21 Apr 2017 10:08:17 +0200
+
+lliurex-miniscreen (1.8.8) xenial; urgency=medium
+
+  * ported code to xenial
+  * fixed compilation
+  * fixed dependencies
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 05 Feb 2016 10:08:44 +0100
+
+lliurex-miniscreen (1.8.5~lliurex1) trusty; urgency=medium
+
+  * Upload to trusty
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 29 Sep 2015 16:31:08 +0200
+
+lliurex-miniscreen (1.8.5) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- joamuran <joamuran@gmail.com>  Tue, 15 Jan 2013 12:53:36 +0100
+
+lliurex-miniscreen (1.8.4) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- joamuran <joamuran@gmail.com>  Tue, 15 Jan 2013 12:19:53 +0100
+
+lliurex-miniscreen (1.8.3) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- joamuran <joamuran@gmail.com>  Tue, 15 Jan 2013 11:48:46 +0100
+
+lliurex-miniscreen (1.8.2) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- joamuran <joamuran@gmail.com>  Tue, 15 Jan 2013 11:28:56 +0100
+
+lliurex-miniscreen (1.8.1) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- joamuran <joamuran@gmail.com>  Tue, 15 Jan 2013 10:09:24 +0100
+
+lliurex-miniscreen (1.8) precise; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 15 Nov 2012 16:17:19 +0100
+
+lliurex-miniscreen (1.7) precise; urgency=low
+
+  * Fixed dependences 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 15 Nov 2012 16:10:35 +0100
+
+lliurex-miniscreen (1.6) precise; urgency=low
+
+  * To Pandora 
+
+ -- José Alfredo Múrcia Andrés <joamuran@gmail.com>  Fri, 26 Oct 2012 13:16:00 +0200
+
+lliurex-miniscreen (1.4) lucid; urgency=low
+
+  * To nemo 
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 21 May 2012 09:26:32 +0200
+
+lliurex-miniscreen (1.3) lucid; urgency=low
+
+  * Updated translations.
+
+ -- José A. Múrcia <murcia_josand@gva.es>  Thu, 19 May 2011 09:03:54 +0200
+
+lliurex-miniscreen (1.2) lucid; urgency=low
+
+  * Hided miniscreen in miniscreen, added variable refresh rate and translations.
+
+ -- José A. Múrcia <murcia_josand@gva.es>  Fri, 06 May 2011 10:09:09 +0200
+
+lliurex-miniscreen (1.0) UNRELEASED; urgency=low
+
+  * First Version of lliurex-miniscreen
+
+ -- Jose Alfredo Murcia Andres <murcia_josand@gva.es>  Tue, 20 Dec 2010 12:13:10 +0100
