@@ -4,8 +4,8 @@ SOURCES=miniscreen/*.cs						\
 
 
 	
-CSC = dmcs
-CSC_FLAGS = -r:Mono.Posix.dll -pkg:gtk-sharp-2.0 -pkg:notify-sharp -r:Mono.Cairo -r:System.Data -r:/usr/lib/mono/4.0/libmono-lliurex-utils.dll -optimize+
+CSC = mcs
+CSC_FLAGS = -r:Mono.Posix.dll -pkg:gtk-sharp-2.0 -r:/usr/lib/cli/notify-sharp-0.4/notify-sharp.dll -r:Mono.Cairo -r:System.Data  -optimize+
 # Fix build by M.Angel
 #-r:libmono-lliurex-utils -optimize+
 OUT = miniscreen.exe
