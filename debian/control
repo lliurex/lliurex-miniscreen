@@ -3,13 +3,13 @@ Section: utils
 Priority: optional
 Maintainer: Equipo LliureX <lliurex@gva.es>
 Uploaders: M.Angel Juan <m.angel.juan@gmail.com>, Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Daniel Duran Vecino <daduve@gmail.com>, Juanma Navarro <juanma1980@gmail.com>, Juan Ramon Pelegrina <juapesai@hotmail.com>,Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>, David Montalva Furio <dmontalf@gmail.com>
-Build-Depends: llxsrchelper,debhelper (>= 7.0), mono-mcs, libgtk2.0-cil-dev, libgconf2.0-cil-dev, libmono-sharpzip4.84-cil, libnotify-cil-dev, libmono-lliurex-utils, pkg-config, libmono-system-data4.0-cil
+Build-Depends: llxsrchelper,debhelper (>= 7.0), mono-mcs, libgtk2.0-cil-dev, libgconf2.0-cil-dev, libmono-sharpzip4.84-cil, libnotify-cil-dev, pkg-config, libmono-system-data4.0-cil
 Standards-Version: 4.1.4
 Homepage: http://lliurex.net
 
 Package: lliurex-miniscreen
 Architecture: all
-Depends: ${misc:Depends}, mono-runtime, lliurex-common-utils (>= 0.3.9), libmono-lliurex-utils, xdotool, libnotify0.4-cil, xinput
+Depends: ${misc:Depends}, mono-runtime, lliurex-common-utils (>= 0.3.9), xdotool, libnotify0.4-cil, libgtk2.0-cil, xinput, xdotool
 Description: LliureX MiniScreen.
  A Mini Screen to able people with motor disabilities
  and children to interact easily with Interactive 
