@@ -1,9 +1,13 @@
-lliurex-miniscreen (1.9.2) UNRELEASED; urgency=medium
+lliurex-miniscreen (1.9.2) focal; urgency=medium
 
+  [ Enrique Medina Gremaldos ]
   * Removed libmono-lliurex-utils
   * using mcs instead of deprecated dmcs
 
- -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Thu, 10 Jan 2019 13:33:59 +0100
+  [ M.Angel Juan ]
+  * Focal port
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 23 Apr 2021 13:27:21 +0200
 
 lliurex-miniscreen (1.9.1) bionic; urgency=medium
 
