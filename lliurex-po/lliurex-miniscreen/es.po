@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2011-05-05 20:15:35+0200\n"
+"PO-Revision-Date: 2011-05-06 09:58:49+0200\n"
+"Last-Translator: jose\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: MonoDevelop Gettext addin\n"
+
+#: ../miniscreen/MainWindow.cs:271
+msgid "MiniScreen Resolution"
+msgstr "Resolución de la minipantalla"
+
+#: ../miniscreen/MainWindow.cs:311
+msgid "Set Refresh Rate"
+msgstr "Refresco de la minipantalla"
+
+#: ../miniscreen/MainWindow.cs:315
+msgid "500 ms (high refresh rate)"
+msgstr "500 ms (alta tasa de refresco, ordenadores potentes)"
+
+#: ../miniscreen/MainWindow.cs:320
+msgid "750 ms"
+msgstr "750 ms"
+
+#: ../miniscreen/MainWindow.cs:324
+msgid "1000 ms"
+msgstr "1000 ms"
+
+#: ../miniscreen/MainWindow.cs:328
+msgid "1500 ms"
+msgstr "1500 ms"
+
+#: ../miniscreen/MainWindow.cs:332
+msgid "2000 ms (low refresh rate)"
+msgstr "2000 ms (baja tasa de refresco, ordenadores lentos)"
+
+#: ../miniscreen/MainWindow.cs:342
+msgid "Set path color"
+msgstr "Seleccione el color del trazado"
+
+#: ../miniscreen/MainWindow.cs:350
+msgid "Window position"
+msgstr "Posición de la ventana"
+
+#: ../miniscreen/MainWindow.cs:354
+msgid "Left"
+msgstr "Izquierda"
+
+#: ../miniscreen/MainWindow.cs:359
+msgid "Right"
+msgstr "Derecha"
+
+#: ../miniscreen/MainWindow.cs:365
+msgid "Exit from MiniScreen"
+msgstr "Salir de la MiniPantalla"
+
+#: ../miniscreen/MainWindow.cs:376
+msgid "About LliureX MiniScreen"
+msgstr "Sobre la MiniPantalla de LliureX"
+
+#: ../miniscreen/Main.cs:36
+msgid "To Quit, press right button on MiniScreen and select Quit."
+msgstr ""
+"Para salir, pulse el botón derecho sobre la minipantalla y seleccione Salir."
+
+#: ../miniscreen/gtk-gui/LliureXMiniScreen.MainWindow.cs:15
+msgid "MiniScreen"
+msgstr "MiniPantalla"
+
+#: ../miniscreen/gtk-gui/LliureXMiniScreen.About.cs:19
+msgid "About..."
+msgstr "Acerca de..."
+
+#: ../miniscreen/gtk-gui/LliureXMiniScreen.About.cs:46
+#, fuzzy
+msgid ""
+"\n"
+"\n"
+"       LliureX MiniScreen v. 1.2\n"
+"\n"
+"Copyright 2011. The LliureX Team.\n"
+"\n"
+"                 License: GPL-3\n"
+"\n"
+"This program is free software; you can \n"
+"redistribute it and/or modify it under \n"
+"the  terms of the GNU General Public \n"
+"License as published by the Free Soft-\n"
+"ware Foundation; either version 3, or \n"
+"(at your option) any later version.\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"       LliureX MiniScreen v. 1.1\n"
+"\n"
+"Copyright 2011. El Equipo LliureX.\n"
+"\n"
+"                 Licencia: GPL-3\n"
+"\n"
+"Este programa es software libre, puede\n"
+"redistribuirse y/o modificarlo bajo \n"
+"los términos de la licencia Pública General \n"
+"de GNU publicada por la Free Software\n"
+"Foundation; en la su versión 3, o (según\n"
+"su criterio) cualquier versión posterior.\n"
+"\n"
+"\n"
+
+#~ msgid "MainWindow"
+#~ msgstr "MiniPantalla"
+
