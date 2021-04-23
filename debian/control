@@ -3,7 +3,8 @@ Section: utils
 Priority: optional
 Maintainer: Equipo LliureX <lliurex@gva.es>
 Uploaders: M.Angel Juan <m.angel.juan@gmail.com>, Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Daniel Duran Vecino <daduve@gmail.com>, Juanma Navarro <juanma1980@gmail.com>, Juan Ramon Pelegrina <juapesai@hotmail.com>,Enrique Medina Gremaldos <quiqueiii@gmail.com>, David Montalva Furio <dmontalf@gmail.com>
-Build-Depends: llxsrchelper,debhelper (>= 7.0), mono-mcs, libgtk2.0-cil-dev, libgconf2.0-cil-dev, libmono-sharpzip4.84-cil, libnotify-cil-dev, pkg-config, libmono-system-data4.0-cil
+Build-Depends: llxsrchelper,debhelper (>= 7.0), mono-mcs, libnotify-cil-dev, pkg-config, gtk-sharp2
+# libgtk2.0-cil-dev, libgconf2.0-cil-dev, libmono-sharpzip4.84-cil, libmono-system-data4.0-cil
 Standards-Version: 4.1.4
 Homepage: http://lliurex.net
 
