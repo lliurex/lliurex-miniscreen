@@ -54,7 +54,7 @@ namespace LliureXMiniScreen{
 			
 			// Dimensions de la pantalla
 			root.GetSize(out ScreenWidth, out ScreenHeight);
-			Console.WriteLine("Pantalla: "+ScreenWidth+" "+ScreenHeight);
+			//Console.WriteLine("Pantalla: "+ScreenWidth+" "+ScreenHeight);
 			
 			PathColor=new Color(255,0,0);
 				
@@ -79,10 +79,10 @@ namespace LliureXMiniScreen{
 				Input_Devices_List.Add(split_texto);
 			}
 			
-			foreach(String [] device in Input_Devices_List){
-				Console.WriteLine("DEV: "+device[0]);
-				Console.WriteLine("PROP: "+device[1]);
-			}
+			//foreach(String [] device in Input_Devices_List){
+			//	Console.WriteLine("DEV: "+device[0]);
+			//	Console.WriteLine("PROP: "+device[1]);
+			//}
 				
 			sr.Close();
 			// cap posar dev i property com a parametres al xinit, i xinit com a dependencia d'este paquet
@@ -147,7 +147,7 @@ namespace LliureXMiniScreen{
 		{
 			InitScreenshot = Gdk.Pixbuf.FromDrawable(root, root.Colormap, 0,0, 0,0, ScreenWidth, ScreenHeight);
 			
-			Console.WriteLine("New capture from (0,0) to ("+ScreenWidth+","+ScreenHeight+")");
+	//		Console.WriteLine("New capture from (0,0) to ("+ScreenWidth+","+ScreenHeight+")");
 		}
 	
 		public void setHint(){
@@ -163,14 +163,14 @@ namespace LliureXMiniScreen{
 		
 		void HandleEventbox1MotionNotifyEvent (object o, MotionNotifyEventArgs args)
 		{
-			Console.WriteLine("Moving");
+			//Console.WriteLine("Moving");
 			//Console.WriteLine(args.Event.X+","+args.Event.Y);
 			//line_xf=(int)args.Event.X;
 			//line_yf=(int) args.Event.Y;
 			try{
 			// Afegim el punt a la llista...
 				if(BtnPressed){
-					Console.WriteLine("Adding: "+args.Event.X+","+args.Event.Y);
+					//Console.WriteLine("Adding: "+args.Event.X+","+args.Event.Y);
 					Llista_Punts.Add(new Gdk.Point((int)args.Event.X, (int)args.Event.Y));
 					DrawPreview();
 				}
@@ -219,14 +219,14 @@ namespace LliureXMiniScreen{
 			pos_mouse_y_global=pos_mouse_y*ScreenHeight/this.MiniScreenHeight;
 			
 			// Mostrem la informació
-			Console.WriteLine("RELEASE: Screen From: ("+px+","+py+") to ("+(px+miniscreen_size_x)+","+(py+miniscreen_size_y)+")");
-			Console.WriteLine("RELEASE: Pointer at: ("+pos_mouse_x+ ","+pos_mouse_y+")");
-			Console.WriteLine("RELEASE: Pointer at: ("+pos_mouse_x_global+ ","+pos_mouse_y_global+")");
+			//Console.WriteLine("RELEASE: Screen From: ("+px+","+py+") to ("+(px+miniscreen_size_x)+","+(py+miniscreen_size_y)+")");
+			//Console.WriteLine("RELEASE: Pointer at: ("+pos_mouse_x+ ","+pos_mouse_y+")");
+			//Console.WriteLine("RELEASE: Pointer at: ("+pos_mouse_x_global+ ","+pos_mouse_y_global+")");
 			
 			if(args.Event.Button==1){ // Si el botó era l'1...
 				// Movem el ratolí en funció de la llista...
 					
-				Console.WriteLine("N PUNTS: "+Llista_Punts.Count);
+				//Console.WriteLine("N PUNTS: "+Llista_Punts.Count);
 				if(Llista_Punts.Count>3){
 					//Console.WriteLine("N PUNT 1: "+Llista_Punts[0].X+","+Llista_Punts[0].Y);
 					//Console.WriteLine("N PUNT 2: "+Llista_Punts[1].X+","+Llista_Punts[1].Y);
@@ -251,7 +251,7 @@ namespace LliureXMiniScreen{
 					
 					
 					
-					Console.WriteLine("Posicionant en: "+Llista_Punts[0].X*ScreenWidth/this.MiniScreenWidth+" "+Llista_Punts[0].Y*ScreenHeight/this.MiniScreenHeight);
+					//Console.WriteLine("Posicionant en: "+Llista_Punts[0].X*ScreenWidth/this.MiniScreenWidth+" "+Llista_Punts[0].Y*ScreenHeight/this.MiniScreenHeight);
 					p.StartInfo.Arguments = " mousemove  "+Llista_Punts[0].X*ScreenWidth/this.MiniScreenWidth+" "+Llista_Punts[0].Y*ScreenHeight/this.MiniScreenHeight;
 					p.Start();
 					p.WaitForExit();
@@ -264,7 +264,7 @@ namespace LliureXMiniScreen{
 					p.WaitForExit();
 					
 					foreach(Gdk.Point pt in Llista_Punts){
-						Console.WriteLine("Movint to: "+pt.X*ScreenWidth/this.MiniScreenWidth+" "+pt.Y*ScreenHeight/this.MiniScreenHeight);
+						//Console.WriteLine("Movint to: "+pt.X*ScreenWidth/this.MiniScreenWidth+" "+pt.Y*ScreenHeight/this.MiniScreenHeight);
 						p.StartInfo.Arguments = " mousemove  "+pt.X*ScreenWidth/this.MiniScreenWidth+" "+pt.Y*ScreenHeight/this.MiniScreenHeight;
 						p.Start();
 						p.WaitForExit();
@@ -279,8 +279,8 @@ namespace LliureXMiniScreen{
 					finalx=px+pos_mouse_x;
 					finaly=py+pos_mouse_y;
 					
-					Console.WriteLine("px: "+px+" pos_mouse_x: "+pos_mouse_x);
-					Console.WriteLine("px: "+py+" pos_mouse_x: "+pos_mouse_y);
+					//Console.WriteLine("px: "+px+" pos_mouse_x: "+pos_mouse_x);
+					//Console.WriteLine("px: "+py+" pos_mouse_x: "+pos_mouse_y);
 					
 				
 					p.StartInfo.Arguments = "mousemove "+finalx+" "+finaly;
@@ -303,7 +303,7 @@ namespace LliureXMiniScreen{
 				} else {
 					// Si només hi ha un clic...
 					if(Llista_Punts.Count>0){
-						Console.WriteLine("Click*****************************");
+						//Console.WriteLine("Click*****************************");
 						
 						Process p = new Process();
 						p.StartInfo.FileName = "xdotool";
@@ -313,7 +313,7 @@ namespace LliureXMiniScreen{
 						//p.Start();
 						//p.WaitForExit();
 					
-						Console.WriteLine("Movint INIT to: "+Llista_Punts[0].X*ScreenWidth/this.MiniScreenWidth+" "+Llista_Punts[0].Y*ScreenHeight/this.MiniScreenHeight);
+						//Console.WriteLine("Movint INIT to: "+Llista_Punts[0].X*ScreenWidth/this.MiniScreenWidth+" "+Llista_Punts[0].Y*ScreenHeight/this.MiniScreenHeight);
 						p.StartInfo.Arguments = " mousemove  "+Llista_Punts[0].X*ScreenWidth/this.MiniScreenWidth+" "+Llista_Punts[0].Y*ScreenHeight/this.MiniScreenHeight;
 						p.Start();
 						p.WaitForExit();
@@ -349,7 +349,7 @@ namespace LliureXMiniScreen{
 	
 		
 		void MiniScreenSettings()	{
-			Console.WriteLine("Right Click");
+			//Console.WriteLine("Right Click");
 			
 			Gtk.Menu menu_settings=new Gtk.Menu();
 			Gtk.MenuItem menuitem1=new Gtk.MenuItem(Mono.Unix.Catalog.GetString("MiniScreen Resolution"));
@@ -546,7 +546,7 @@ namespace LliureXMiniScreen{
 				// Establim la finestra al cantó inferior dret
 				//LliureXMiniScreen.MainClass.win.Move(ScreenWidth-MiniScreenWidth, ScreenHeight-MiniScreenHeight);
 				LliureXMiniScreen.Core.getCore().win.Move(position*(ScreenWidth-MiniScreenWidth), ScreenHeight-MiniScreenHeight);
-				Console.WriteLine("Movent a: "+position*(ScreenWidth-MiniScreenWidth)+","+(ScreenHeight-MiniScreenHeight));
+				//Console.WriteLine("Movent a: "+position*(ScreenWidth-MiniScreenWidth)+","+(ScreenHeight-MiniScreenHeight));
 				
 				//LliureXMiniScreen.MainClass.win.Activate();
 				LliureXMiniScreen.Core.getCore().win.Activate();
@@ -557,7 +557,7 @@ namespace LliureXMiniScreen{
 			{
 					//LliureXMiniScreen.Core.getCore().win.Hide();
 					takeSnapshot();
-					Console.WriteLine("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
+					//Console.WriteLine("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
 					MiniScreenPosition=1;
 					MoveMiniScreen(MiniScreenPosition);
 					LliureXMiniScreen.Core.getCore().win.Show();
@@ -566,7 +566,7 @@ namespace LliureXMiniScreen{
 	
 			void HandleMenuitem3_0ButtonPressEvent (object o, ButtonPressEventArgs args)
 			{
-				Console.WriteLine("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
+				//Console.WriteLine("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
 				MiniScreenPosition=0;
 				MoveMiniScreen(MiniScreenPosition);
 			}
@@ -591,7 +591,7 @@ namespace LliureXMiniScreen{
 		}
 	
 		void HandleMenuitem1ButtonPressEvent (object obj, ButtonPressEventArgs args) {
-			Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+			//Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 			try{
 				
 				// Amaguem la finestra per tornar a fer la captura inicial
@@ -599,49 +599,49 @@ namespace LliureXMiniScreen{
 				takeSnapshot();
 				
 				if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="300 x 240 (5:4)"){
-					Console.WriteLine("300 x 240 (5:4)");
+					//Console.WriteLine("300 x 240 (5:4)");
 					MiniScreenWidth=300;
 					MiniScreenHeight=240;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="400 x 320 (5:4)"){
-					Console.WriteLine("400 x 320 (5:4)");
+					//Console.WriteLine("400 x 320 (5:4)");
 					MiniScreenWidth=400;
 					MiniScreenHeight=320;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="400 x 235 (16:9)"){
-					Console.WriteLine("400 x 235 (16:9)");
+					//Console.WriteLine("400 x 235 (16:9)");
 					MiniScreenWidth=400;
 					MiniScreenHeight=235;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="300 x 176 (16:9)"){
-					Console.WriteLine("300 x 176 (16:9)");
+					//Console.WriteLine("300 x 176 (16:9)");
 					MiniScreenWidth=300;
 					MiniScreenHeight=176;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="300 x 225 (4:3)"){
-					Console.WriteLine("300 x 225 (4:3)" );
+					//Console.WriteLine("300 x 225 (4:3)" );
 					MiniScreenWidth=300;
 					MiniScreenHeight=225;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="200 x 150 (4:3)"){
-					Console.WriteLine("200 x 150 (4:3)");
+					//Console.WriteLine("200 x 150 (4:3)");
 					MiniScreenWidth=200;
 					MiniScreenHeight=150;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="300 x 166 (9:5)"){
-					Console.WriteLine("300 x 166 (9:5)");
+					//Console.WriteLine("300 x 166 (9:5)");
 					MiniScreenWidth=300;
 					MiniScreenHeight=166;
 					
 				//	MiniScreen.SetSizeRequest(MiniScreenWidth,MiniScreenHeight);
 				} else if(((Gtk.AccelLabel)((Gtk.MenuItem)obj).Children[0]).Text=="200 x 111 (9:5)"){
-					Console.WriteLine("200 x 111 (9:5)");	
+					//Console.WriteLine("200 x 111 (9:5)");	
 					MiniScreenWidth=200;
 					MiniScreenHeight=111;
 					
@@ -657,7 +657,7 @@ namespace LliureXMiniScreen{
 				//LliureXMiniScreen.Core.getCore().win.Move(0, 784);
 				
 			
-				Console.WriteLine("Nou tam: "+MiniScreenWidth+","+MiniScreenHeight);
+				//Console.WriteLine("Nou tam: "+MiniScreenWidth+","+MiniScreenHeight);
 				MoveMiniScreen(MiniScreenPosition);
 				
 
@@ -698,16 +698,16 @@ namespace LliureXMiniScreen{
 				pos_mouse_y_global=pos_mouse_y*ScreenHeight/this.MiniScreenHeight;
 				
 				// Mostrem la informació
-				Console.WriteLine("Screen From: ("+px+","+py+") to ("+(px+miniscreen_size_x)+","+(py+miniscreen_size_y)+")");
-				Console.WriteLine("Pointer at: ("+pos_mouse_x+ ","+pos_mouse_y+")");
-				Console.WriteLine("Pointer at: ("+pos_mouse_x_global+ ","+pos_mouse_y_global+")");
+				//Console.WriteLine("Screen From: ("+px+","+py+") to ("+(px+miniscreen_size_x)+","+(py+miniscreen_size_y)+")");
+				//Console.WriteLine("Pointer at: ("+pos_mouse_x+ ","+pos_mouse_y+")");
+				//Console.WriteLine("Pointer at: ("+pos_mouse_x_global+ ","+pos_mouse_y_global+")");
 				
 				// Controlem si el clic és dins de la seua finestra de miniscreen
 				
 				if(pos_mouse_x_global>px && pos_mouse_x_global<px+miniscreen_size_x &&
 			   	pos_mouse_y_global>py && pos_mouse_y_global<py+miniscreen_size_y)
 				{
-					Console.WriteLine("ESTA DINS!!!");
+				//	Console.WriteLine("ESTA DINS!!!");
 					Init();
 			
 				} else {
@@ -729,12 +729,12 @@ namespace LliureXMiniScreen{
 		
 		private bool DrawPreview(){
 			
-			Console.WriteLine(OldRefreshRate+"--------"+RefreshRate);
+			//Console.WriteLine(OldRefreshRate+"--------"+RefreshRate);
 			
 			if(OldRefreshRate==RefreshRate){
 				if(!moving_mouse){
 					
-					Console.WriteLine("Drawing with ref rate..."+RefreshRate);
+					//Console.WriteLine("Drawing with ref rate..."+RefreshRate);
 					
 					int width = 0;
 					int height = 0;
@@ -758,7 +758,7 @@ namespace LliureXMiniScreen{
 							px=MiniScreenPosition*(width-miniscreen_size_x);
 							py=height-miniscreen_size_y;
 															
-							Console.WriteLine("Dibuixe en: ("+px+","+py+") una finestra de "+miniscreen_size_x+"x"+miniscreen_size_y);
+							//Console.WriteLine("Dibuixe en: ("+px+","+py+") una finestra de "+miniscreen_size_x+"x"+miniscreen_size_y);
 							if (px!=win_px || py!=win_py) LliureXMiniScreen.Core.getCore().win.Move(px, py);
 								
 							// Amaguem la minipantallla
@@ -769,7 +769,7 @@ namespace LliureXMiniScreen{
 								
 							// END PATCH
 								
-							Console.WriteLine("->"+HiddenMiniScreen.Width+" " + HiddenMiniScreen.Height);
+							//Console.WriteLine("->"+HiddenMiniScreen.Width+" " + HiddenMiniScreen.Height);
 				 			HiddenMiniScreen=HiddenMiniScreen.ScaleSimple(miniscreen_size_x, miniscreen_size_y, InterpType.Bilinear);
 							HiddenMiniScreen.CopyArea(0,0, miniscreen_size_x, miniscreen_size_y,
 							                          	screenshot, px, py);
@@ -838,7 +838,7 @@ namespace LliureXMiniScreen{
 				}
 			}else{
 				//if(RefreshRate!=OldRefreshRate){
-					Console.WriteLine("Change refresg rate!!!");
+					//Console.WriteLine("Change refresg rate!!!");
 					OldRefreshRate=RefreshRate;
 					return false;
 				//}
@@ -881,7 +881,7 @@ namespace LliureXMiniScreen{
     		// Get the output into a string
     		string result = proc.StandardOutput.ReadToEnd();
     		// Display the command output.
-    		Console.WriteLine(result);
+    		//Console.WriteLine(result);
       		}
       		catch (Exception objException)
       		{
