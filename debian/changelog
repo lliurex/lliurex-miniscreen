@@ -1,4 +1,4 @@
-lliurex-miniscreen (1.9.2) UNRELEASED; urgency=medium
+lliurex-miniscreen (1.9.2) bionic; urgency=medium
 
   * Removed libmono-lliurex-utils
   * using mcs instead of deprecated dmcs
